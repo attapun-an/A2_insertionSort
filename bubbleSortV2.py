@@ -1,12 +1,13 @@
 def bubble_sort(numList):
     swap = True
-    while Swap:
+    while swap:
         swap = False
         for i in range(len(numList)-1):
             if numList[i] > numList[i+1]:
                 temp = numList[i]
                 numList[i] = numList[i+1]
-                
+                numList[i+1] = temp
+                swap = True
 
     return numList
 
